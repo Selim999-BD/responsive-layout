@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .root{
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+            
+        }
+        .nav ul{
+            list-style: none;
+        }
+        li a{
+            color:black;
+            text-decoration: none;
+            font-size: 2rem;
+            padding: 10px;
+            
+        } 
+        .span{
+            display: flex;
+        }
+        li a:hover{
+            background-color: gray;
+            border:1px solid rgb(82, 81, 81);
+            border-radius: 5px;
+        }
+        .nav{
+            display: flex;
+            justify-content:space-between
+        }
+
+        /* Form Area style */
+        .form-area{
+            height:400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-contain{
+            width:50%;
+        }
+        .form-contain >input{
+            display: flex;
+            width: 100%;
+            padding: 6px 0;
+            margin-bottom: 10px;
+        }
+
+        input::placeholder{
+            color:gray;
+            font-size: 1.5rem;
+            
+        }
+        /* calendar style */
+        .calendar{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        .day,.date{
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            font-size: 2rem;
+        }
+        .date{
+            background-color: gray;
+            height: 70px;
+        }
+
+        @media screen and (max-width:576px) {
+            .nav{
+                flex-direction: column;
+            }
+            .btn{
+                background-color: aqua;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            li a{
+            color:black;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+        .form-contain{
+            width:70%;
+        } 
+        }
+        @media screen and (min-width:576px) and (max-width:768px){
+            .nav{
+                flex-direction: column;
+            }
+            .form-contain{
+            width:70%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <nav class="nav">
+            <span class="span">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </span>
+            <ul >
+                <li><a class="btn" href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="form-area">
+            <form class="form-contain">
+                <h3>Sign up the Form</h3>
+                <input type="email" name="" id="" placeholder="Your Email" required>
+                <input type="password" name="" id="" placeholder="Your password" required>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section class="calendar">
+            <div class="date">S</div>
+            <div class="date">M</div>
+            <div class="date">T</div>
+            <div class="date">W</div>
+            <div class="date">T</div>
+            <div class="date">F</div>
+            <div class="date">S</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day">31</div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day">31</div>
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
