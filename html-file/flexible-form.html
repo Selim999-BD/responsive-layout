@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+            margin-right: 10px;
+
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width:50%;
+        }
+        .login-form >input{
+            margin-bottom: 20px;
+        }
+        .form-area{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">About</a>
+            <a href="#">Blogs</a>
+        </span>
+        <a href="#">Login</a>
+    </nav>
+    <div class="form-area">
+        <form class="login-form">
+            <h3>Please Login</h3>
+            <input type="email" name="" id="" placeholder="email" required>
+            <input type="password" name="" id="" placeholder="password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
